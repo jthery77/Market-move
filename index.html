@@ -6,8 +6,43 @@
     <title>Notion Stock Widget</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
+  <body class="light">
+    <!-- Light/Dark Btn -->
+    <div class="settings">
+      <div class="modes">
+        <button class="light">Light</button>
+        <button class="dark">Dark</button>
+      </div>
+    </div>
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container"> id="light">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/stocks-usa/" rel="noopener" target="_blank"><span class="blue-text">Stock Market Today</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+  {
+  "colorTheme": "light",
+  "dateRange": "1D",
+  "exchange": "US",
+  "showChart": true,
+  "locale": "en",
+  "width": "100%",
+  "height": "100%",
+  "largeChartUrl": "",
+  "isTransparent": true,
+  "showSymbolLogo": false,
+  "plotLineColorGrowing": "rgba(25, 118, 210, 1)",
+  "plotLineColorFalling": "rgba(25, 118, 210, 1)",
+  "gridLineColor": "rgba(42, 46, 57, 1)",
+  "scaleFontColor": "rgba(120, 123, 134, 1)",
+  "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+  "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+  "symbolActiveColor": "rgba(33, 150, 243, 0.12)"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+   <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container"> id="dark">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/stocks-usa/" rel="noopener" target="_blank"><span class="blue-text">Stock Market Today</span></a> by TradingView</div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
@@ -17,11 +52,11 @@
   "exchange": "US",
   "showChart": true,
   "locale": "en",
+  "width": "100%",
+  "height": "100%",
   "largeChartUrl": "",
-  "isTransparent": false,
+  "isTransparent": true,
   "showSymbolLogo": false,
-  "width": "400",
-  "height": "600",
   "plotLineColorGrowing": "rgba(25, 118, 210, 1)",
   "plotLineColorFalling": "rgba(25, 118, 210, 1)",
   "gridLineColor": "rgba(42, 46, 57, 1)",
